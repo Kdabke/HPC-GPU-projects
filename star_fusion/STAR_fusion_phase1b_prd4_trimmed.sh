@@ -4,8 +4,8 @@
 #$ -pe smp 10
 #$ -l mem_free=95G,h_vmem=140G
 #$ -S /bin/bash
-#$ -e /common/bermanblab/data/private_data/POC_ROC/POC_ROC_RNA-Seq/Phase1_star_fusion/scratch
-#$ -o /common/bermanblab/data/private_data/POC_ROC/POC_ROC_RNA-Seq/Phase1_star_fusion/scratch
+#$ -e path_to_working_dir
+#$ -o path_to_working_dir
 
 
 set -xe
