@@ -5,8 +5,8 @@
 #$ -l mem_free=10G
 #
 #$ -S /bin/bash
-#$ -e /common/bermanblab/data/private_data/POC_ROC/POC_ROC_RNA-Seq/POC_ROC_phase1_bw/scratch
-#$ -o /common/bermanblab/data/private_data/POC_ROC/POC_ROC_RNA-Seq/POC_ROC_phase1_bw/scratch
+#$ -e path_to_working_dir
+#$ -o path_to_working_dir
 
 set -xe
 
@@ -16,8 +16,7 @@ NAME="$1"
 
 [[ -e "${INFILE}" ]] && echo "infile ${INFILE} exists"
 
-source /home/dabkek/miniconda3/etc/profile.d/conda.sh
-conda activate /home/dabkek/miniconda3/envs/rnaseq
+conda activate rnaseq
 
 rsem-bam2wig \
 	${INFILE} \
