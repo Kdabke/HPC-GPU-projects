@@ -4,8 +4,8 @@
 #$ -pe smp 6
 #$ -l mem_free=20G
 #$ -S /bin/bash
-#$ -e /common/bermanblab/data/private_data/POC_ROC/POC_ROC_RNA-Seq/TCR_RNA_seq/MiXCR/scratch
-#$ -o /common/bermanblab/data/private_data/POC_ROC/POC_ROC_RNA-Seq/TCR_RNA_seq/MiXCR/scratch
+#$ -e path_to_working_dir
+#$ -o path_to_working_dir
 
 
 
