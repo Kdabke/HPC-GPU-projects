@@ -1,5 +1,4 @@
-# High-grade-serous-ovarian-cancer-project-code
+# HPC/GPU projects
 Code associated with the following projects:
-  1. Novel gene fusions and peptide detection
-  2. HRDetect tool
-  3. Automated image processing (HoverNet)
+  1. HRDetect tool
+  2. Automated image processing (HoverNet)
