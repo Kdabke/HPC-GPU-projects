@@ -1,0 +1,33 @@
+R scripts in this folder were used to generate inputs to run HRDetect: https://www.nature.com/articles/nm.4292
+
+# HRDetect analysis
+
+# needs copy number information from PURPLE: file name ending in: *.purple.cnv.somatic.tsv 
+# analyse this with the following script to get the right kind of format for HRDetect: copynumber_from_purple.R
+# this script needs input in this format = input.txt
+location/purple_output_file/	output/location/*.txt	
+
+### to run the R script use: xargs -n 2 Rscript copynumber_from_purple.R < input.txt 
+
+
+######### copy number files are generated for 67 samples: copy_number_files
+
+
+# needs GRIDSS SV information: file name ending in: *.gripss.somatic.filtered.vcf.gz
+# convert GRIDSS/GRIPSS files to .bedpe format with this R script: bedpe_from_SV.R
+# this script needs input in this format = input.txt
+location/from_gridss/	sample_name	location/output/*.bedpe
+
+### to run the R script use: xargs -n 3 Rscript bedpe_from_SV.R < input.txt 
+
+######## bedpe files are generated for 67 samples in folder: bedpe_files 
+
+
+# needs indel information, used mutect2 files: paired files needed; name ending in: Mutect2-filt_INDELs.vcf.gz and tbi
+
+# needs a data_matrix file: can be generated from cosmic signatures:
+(two files for cosmic signature): cosmic_signatures.csv & phase2_cosmic_signatures.csv
+HRDetect_12.8.21.R (Nicole's script to generate the HRD score on a list of samples)
+
+# list of the files will be used as input in HRDetect using Nicole's script
+
