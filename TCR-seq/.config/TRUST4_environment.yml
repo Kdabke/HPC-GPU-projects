@@ -1,0 +1,16 @@
+name: TRUST4
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=2_gnu
+  - libgcc-ng=12.1.0=h8d9b700_16
+  - libgomp=12.1.0=h8d9b700_16
+  - libnsl=2.0.0=h7f98852_0
+  - libstdcxx-ng=12.1.0=ha89aaad_16
+  - libzlib=1.2.12=h166bdaf_0
+  - perl=5.32.1=2_h7f98852_perl5
+  - trust4=1.0.7=h5b5514e_0
+prefix: /home/dabkek/miniconda3/envs/TRUST4
