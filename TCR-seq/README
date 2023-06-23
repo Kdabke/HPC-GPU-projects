@@ -1,0 +1,23 @@
+Two different TCR-seq tools compared for understanding the T cell receptor repertoire of HGSOC from bulk RNA-seq 
+data
+
+## MiXCR: https://mixcr.com/
+
+"mixcr_script.sh" script to run mixcr with paired .fastq files
+
+## TRUST4: https://www.nature.com/articles/s41592-021-01142-2
+
+"trust4_script.sh" script to run TRUST4 with .BAM files from local project in hg38
+
+"trust4_script_bowtell_hg19.sh" script to run TRUST4 with .BAM files in hg19 from Bowtell study: 
+https://www.nature.com/articles/nature14410
+
+# outputs from both tools were further processed with immunarch: https://immunarch.com/
+
+Analysis done with the two tools for T cell receptors:
+
+1. Distribution of CDR3 lengths and plotting CDR3 sequence logo for the most frequent length of sequence (14 aa)
+2. Calculate clonotype count and diversity (Gini-Simpson index)
+3. Top clonal proportions and rare clonal proportions
+4. Repertoire overlap
+5. Gene usage
