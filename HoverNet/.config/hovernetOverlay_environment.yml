@@ -189,4 +189,4 @@ dependencies:
   - zstd=1.5.2=ha95c52a_0
   - pip:
     - openslide-python==1.1.2
-prefix: /home/dabkek/miniconda3/envs/overlay_image
+prefix: 
