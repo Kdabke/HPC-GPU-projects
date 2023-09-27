@@ -13,4 +13,4 @@ dependencies:
   - libzlib=1.2.12=h166bdaf_0
   - perl=5.32.1=2_h7f98852_perl5
   - trust4=1.0.7=h5b5514e_0
-prefix: /home/dabkek/miniconda3/envs/TRUST4
+prefix: 
